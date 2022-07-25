@@ -13,11 +13,12 @@
   * Install Angular CLI  globally (one time procedure)  
   ```bash
   npm install -g @angular/cli
+  ng version
   ```
-  * Create Angular .gitignore file  
+  * Open project in vsCode (command run in the project directory)  
   ```bash
-  ...
-  ``` 
+  code .
+  ```   
   * Create Angular App  
   ```bash
   ng new todo-list
@@ -28,13 +29,26 @@
   ```   
 
 
-### Programming Topics practiced to get things done  
-#### 1- To Do App (Angular)  
-* Overview  
-  * Angular Project creation  
-  * Component creation  
+* Create new Angular Component  
+  ```bash
+  ng generate component component-name
+  ```
+  * Create new Angular Service  
+  ```bash
+  ng generate service service-name
+  ```
+
+### Topics practiced to get things done  
+## Angular  
+- Project Structure   
+- Component Structure / Creation   
+- Data Binding   
+- List Iteration   
+- Services    
+- Dependency Injection   
+- Event Handling   
 
 ### Error messages for future reference  
-❌ ...  
-**Solution**  ...    
+❌ Error: Invalid Character (typing ng --version in the terminal)   
+Solution: Use bash (workaround)
 
