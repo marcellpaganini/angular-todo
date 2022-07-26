@@ -10,11 +10,11 @@
 
 ### Project Setup (VS Code)
 * Angular
-  * Install Angular CLI  globally (one time procedure)  
+  * Install Angular CLI  globally (one time setup)  
   ```bash
   npm install -g @angular/cli
   ng version
-  ```
+  ```   
   * Open project in vsCode (command run in the project directory)  
   ```bash
   code .
@@ -22,10 +22,14 @@
   * Create Angular App  
   ```bash
   ng new todo-list
-  ```   
-  * Run the project and open http://localhost:4200
+  ```    
+  * Run the project and open http://localhost:4200   
   ```bash
   ng serve
+  ```   
+  * Install Bootstrap   
+  ```bash
+  npm i bootstrap
   ```   
 
 
