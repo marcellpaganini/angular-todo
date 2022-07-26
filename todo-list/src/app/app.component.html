@@ -1,13 +1,19 @@
 <h3 align="center">{{ title }}</h3>
-
-<div class="container text-center">
+<br />
+<div class="container">
   <div class="row justify-content-md-center">
     <div class="col col-lg-3">
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Add Todo" aria-label="Enter Todo" aria-describedby="basic-addon1" 
+         [(ngModel)]="newTodo">
+        <button class="btn btn-primary" (click)="saveTodo()">Enter Todo</button>
+      </div>
       <table class="table table-striped">
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+          <tr *ngFor="let todo of todos; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ todo.name }}</td>
+            <td style="color: red; font-weight: bold">X</td>
           </tr>
         </tbody>
       </table>
