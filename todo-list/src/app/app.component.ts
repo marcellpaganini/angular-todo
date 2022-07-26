@@ -15,11 +15,19 @@ export class AppComponent {
     if (this.newTodo) {
       let todo = new Todo();
       todo.name = this.newTodo;
-      todo.isCompleted = true;
+      todo.isCompleted = false;
       this.todos.push(todo);
       this.newTodo = "";
     } else {
       alert('Please enter Todo')
     }
+  }
+
+  done(id: number) {
+    this.todos[id].isCompleted = !this.todos[id].isCompleted;
+  }
+
+  remove(id: number) {
+    this.todos = this.todos.filter((value, index) => index !== id);
   }
 }
