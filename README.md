@@ -55,4 +55,6 @@
 ❌ Error: Invalid Character (typing ng --version in the terminal)   
 Solution: Use bash (workaround)   
 ❌ Error: Property 'name' has no initializer and is not definitely assigned in the constructor.      
-Solution: Add ```"strictPropertyInitialization": false``` in the compiler options of the tsconfig.json or a default value to the property.
+Solution: Add ```"strictPropertyInitialization": false``` in the compiler options of the tsconfig.json or a default value to the property.    
+❌ Error: Can't bind to 'ngModel' since it isn't a known property of 'input'.      
+Solution: Add FormsModule and ReactiveFormsModule to the imports array in app.module.ts.      
