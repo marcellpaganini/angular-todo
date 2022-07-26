@@ -32,7 +32,6 @@
   npm i bootstrap
   ```   
 
-
 * Create new Angular Component  
   ```bash
   ng generate component component-name
@@ -54,7 +53,6 @@
 
 ### Error messages for future reference  
 ❌ Error: Invalid Character (typing ng --version in the terminal)   
-Solution: Use bash (workaround)
+Solution: Use bash (workaround)   
 ❌ Error: Property 'name' has no initializer and is not definitely assigned in the constructor.      
 Solution: Add ```"strictPropertyInitialization": false``` in the compiler options of the tsconfig.json or a default value to the property.
-
